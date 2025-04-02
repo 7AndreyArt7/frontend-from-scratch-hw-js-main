@@ -7,12 +7,13 @@
 // your code
 let sum =0;
 let count =0;
-let i =count;
-while (count <=20) {
-    count = count + 1;
-    i = count % 2;
-    if (i === 1) {
-        sum += count;
-        console.log (count, i, sum);
+let sum2 =count;
+while (count < 20) {
+    count++
+    sum2 = count % 2;
+    if (sum2 === 1) {
+        sum=sum + count;
+
+        console.log (count, sum2, sum);
     }
 }
