@@ -8,6 +8,8 @@
 // your code
 let factorial = 1
 let count = 1
-while (factorial <= 10) {
-    factorial *=count++
+while (count <= 10) {
+    factorial=factorial*count
+    count++
+    console.log(factorial)
 }
