@@ -5,4 +5,13 @@
 */
 
 // your code
-let sum
+let sum=1
+let count = 3
+// let sum2=1
+while (count <= 20) {
+    // sum2=sum + count
+    sum=count % 2
+    count=count + 2
+    console.log(sum)
+
+}
