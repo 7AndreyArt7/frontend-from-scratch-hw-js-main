@@ -11,6 +11,4 @@ function isEven(number) {
 }
 
 
-isEven(10)
-
-console.log(isEven());
+console.log(isEven(10));
