@@ -19,15 +19,11 @@ function findUniqueElements(array) {
 
     let newArray = [];
     for (let i = 0; i < array.length; i++) {
-        includesElement(array[i], i);
-        if (includesElement === true){
+        if (!includesElement( newArray, array[i])){
             newArray.push(array[i]);}
-
     }
 
     return newArray
 }
-
-
 
 console.log(findUniqueElements([1, 2, 3, 2, 1, 4]))

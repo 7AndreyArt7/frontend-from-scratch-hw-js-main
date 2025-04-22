@@ -24,6 +24,6 @@ function includesElement(array, element ) {
 }
 
 
-let newFilter =includesElement([1, 2, 3], 4)
+let newFilter =includesElement([1, 2, 3], 2)
 
 console.log(newFilter)
