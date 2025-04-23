@@ -20,12 +20,12 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 
 function findCommonElements(array1, array2)
 {
-    let result = [];
+    let newArray = [];
     for (let i = 0; i < array1.length; i++) {
         if (array2.includes(array1[i])) {
-            result.push(array1[i]);
+            newArray.push(array1[i]);
         }
     }
-    return result;
+    return newArray;
 }
-console.log(findCommonElements([true,2,3,'tron','cat'],[2,true, 4, 'cat']));
+console.log(findCommonElements([1, 2, 3], [2, 3, 4]));
