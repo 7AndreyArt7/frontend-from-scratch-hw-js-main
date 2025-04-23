@@ -22,14 +22,10 @@ function findCommonElements(array1, array2) {
 
     for (let i = 0; i < array1.length; i++) {
         for (let j = 0; j < array2.length; j++) {
-            if (!includesElement(newArray, array1[i])) {
-                if (!includesElement(newArray, array2[j])) {
                     if (array1[i] === array2[j] && array1.length === array2.length) {
                         newArray.push(array2[j])
                     }
                 }
-            }
-        }
     }
     return newArray
 
