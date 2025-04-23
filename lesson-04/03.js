@@ -19,26 +19,21 @@ findCommonElements([1, 2, 3], [2, 3, 4]) // [2, 3]
 
 function findCommonElements(array1, array2) {
     let newArray = []
-    let newArray0 = []
 
-    if (array1.length === array2.length) {
-        for (let i = 0; i < array1.length; i++) {
-            for (let j = 0; j < array2.length; j++) {
-                if (array1[i] === array2[j] && array1.length === array2.length) {
-                    if (!includesElement(newArray, array1[i])) {
-                        newArray.push(array1[i])
-                        if (!includesElement(newArray, array2[j])) {
-                            newArray.push(array2[j])
-                        }
+    for (let i = 0; i < array1.length; i++) {
+        for (let j = 0; j < array2.length; j++) {
+            if (!includesElement(newArray, array1[i])) {
+                if (!includesElement(newArray, array2[j])) {
+                    if (array1[i] === array2[j] && array1.length === array2.length) {
+                        newArray.push(array2[j])
                     }
                 }
             }
         }
-        return newArray
-
-    }else {
-        return newArray0
     }
+    return newArray
+
+
 }
 
 
