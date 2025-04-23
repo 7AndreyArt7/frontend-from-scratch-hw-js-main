@@ -32,7 +32,7 @@ function findCommonElements(array1, array2) {
     }
     return newArray
 }else {
-        return newArray0
+        return findCommonElements(array1, array2)
     }
 }
 
