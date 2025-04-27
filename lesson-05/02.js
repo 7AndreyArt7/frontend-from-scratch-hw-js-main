@@ -36,7 +36,11 @@ const gallery = {
 }
 
 function updateGallery(object, name, newValue) {
-    gallery[name] = newValue;
+    for (gallery[name] in object) {
+        gallery[name] = newValue;
+    if (updateGallery[name]===gallery[name]) {
+        gallery[name] = newValue;
+    }}
 
 
 
