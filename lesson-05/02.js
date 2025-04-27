@@ -36,11 +36,9 @@ const gallery = {
 }
 
 function updateGallery(object, name, newValue) {
-    if (gallery[name] === updateGallery[name]) {
-      return gallery[name] = newValue;
-    } else {
-      return gallery[name] = newValue;
-    }
+    gallery[name] = newValue;
+
+
 
 }
 
