@@ -36,11 +36,10 @@ const gallery = {
 }
 
 function updateGallery(object, name, newValue) {
-    for (gallery[name] in object) {
-        gallery[name] = newValue;
+        Object.defineProperty(gallery, name, {value: newValue})
     if (updateGallery[name]===gallery[name]) {
         gallery[name] = newValue;
-    }}
+    }
 
 
 
