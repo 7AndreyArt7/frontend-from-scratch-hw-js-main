@@ -36,20 +36,11 @@ const gallery = {
 }
 
 function updateGallery(object, name, newValue) {
-    for (updateGallery[name] in object[name]) {
-        const newGallery = object.hasOwnProperty(name);
-        if (newGallery === true) {
+        if (name in object) {
             object[name] = newValue;
-        }{ object[name] = newValue;
+        }{
+          object[name] = newValue;
         }
-    }
-
-    // for (updateGallery[name] in object[name]) {
-    //     object[name] = newValue
-        // if (!object[name]=== updateGallery[name]) {
-        //     object[name] = newValue
-        // }
-    // }
 }
 
 updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
