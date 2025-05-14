@@ -6,4 +6,17 @@
   Другой вариант - использовать метод split строк, и метод массива join.
 */
 
-function capitalizeWords() {}
+function capitalizeWords(words) {
+
+    let result = words
+        .trim()
+        .split(/\s+/)
+        .map(word => {
+            return word[0].toUpperCase() + word.slice(1).toLowerCase()
+        })
+        .join(" ")
+    return result
+}
+
+
+console.log(capitalizeWords("hello world from javascript"))
